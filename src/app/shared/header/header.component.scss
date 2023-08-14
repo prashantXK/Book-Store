@@ -1,0 +1,239 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+.header .header-1 {
+  background-color: var(--light-bg);
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header .header-1 .flex {
+  padding-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header .header-1 .flex .share a {
+  font-size: 23px;
+  margin-right: 1.5rem;
+  color: var(--black);
+}
+
+.header .header-1 .flex .share a:hover {
+  color: var(--purple);
+}
+
+.header .header-1 .flex p {
+  font-size: 20px;
+  color: var(--light-color);
+}
+
+.header .header-1 .flex p a {
+  color: var(--purple);
+}
+
+.header .header-1 .flex p a:hover {
+  text-decoration: none;
+}
+
+.header .header-2 {
+  background-color: var(--black);
+
+}
+
+.header .header-2.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5000;
+}
+
+.header .header-2 .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+margin-left: 50px;
+  height: 70px;
+  position: relative;
+}
+
+
+.header .header-2 .flex .logo {
+  font-size: 28px;
+  color: var(--purple);
+}
+
+.header .header-2 .flex .navbar a {
+  margin: 0 1rem;
+  font-size: 22px;
+  color: var(--white);
+}
+
+.header .header-2 .flex .navbar a:hover {
+  color: var(--purple);
+  text-decoration: none;
+}
+
+.header .header-2 .flex  > * {
+  font-size: 27px;
+  color: var(--white);
+  cursor: pointer;
+  margin-left: 1.8rem;
+}
+.icons>*{
+  font-size: 27px;
+  color: var(--white);
+  cursor:pointer;
+ 
+}
+.header .header-2 .flex .icons > *:hover {
+  color: var(--purple);
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 576px) {
+  .header .header-1 .flex {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+
+  .header .header-1 .flex .share a {
+    font-size: 18px;
+    margin-right: 1rem;
+  }
+
+  .header .header-1 .flex p {
+    font-size: 16px;
+  }
+
+  .header .header-2 .flex .navbar {
+    display: none;
+  }
+
+  #menu-btn {
+    display: block;
+    font-size: 24px;
+    color: var(--white);
+    cursor: pointer;
+    margin-left: 1.5rem;
+  }
+
+  .header .header-2 .flex .icons > * {
+    font-size: 24px;
+    margin-left: 0;
+  }
+
+  .header .header-2 .flex .icons .cart-icon {
+    margin-left: 0.75rem;
+  }
+
+  .header .header-2 .flex .icons .search-icon {
+    margin-left: 0.5rem;
+  }
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 577px) and (max-width: 1024px) {
+  .header .header-1 .flex .share a {
+    font-size: 20px;
+    margin-right: 1.5rem;
+  }
+
+  .header .header-2 .flex .navbar a {
+    margin: 0 0.75rem;
+    font-size: 20px;
+  }
+
+  .header .header-2 .flex .icons > * {
+    font-size: 25px;
+  }
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 1025px) {
+  .header .header-1 .flex {
+    padding-top: 12px;
+  }
+
+  .header .header-1 .flex .share a {
+    font-size: 23px;
+    margin-right: 1.5rem;
+  }
+
+  .header .header-1 .flex p {
+    font-size: 20px;
+  }
+
+  .header .header-2 .flex .logo {
+    font-size: 28px;
+  }
+
+  .header .header-2 .flex .navbar a {
+    margin: 0 1rem;
+    font-size: 22px;
+  }
+
+  .header .header-2 .flex .icons > * {
+    font-size: 27px;
+    margin-left: 1.5rem;
+  }
+}
+
+/* Larger Screens */
+@media screen and (min-width: 1200px) {
+  .header .header-1 .flex {
+    max-width: 1400px;
+    padding: 12px 20px;
+  }
+
+  .header .header-2 .flex {
+    max-width: 1400px;
+  }
+}
+
+/* Smaller Screens */
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 45%;
+  }
+
+  .header .header-1 .flex .share a {
+    font-size: 16px;
+    margin-right: 0.75rem;
+  }
+
+  .header .header-1 .flex p {
+    font-size: 18px;
+  }
+
+  .header .header-2 .flex .navbar a {
+    font-size: 18px;
+    margin: 0.5rem;
+  }
+
+  .header .header-2 .flex .icons > * {
+    font-size: 22px;
+  }
+
+  .header .header-2 .flex .icons .cart-icon {
+    margin-left: 0.25rem;
+  }
+
+  .header .header-2 .flex .icons .search-icon {
+    margin-left: 0.25rem;
+  }
+}

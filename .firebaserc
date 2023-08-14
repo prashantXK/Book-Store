@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fir-forms-bb449": {
+      "hosting": {
+        "forms": [
+          "fir-forms-bb449"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fir-forms-bb449"
+  }
+}

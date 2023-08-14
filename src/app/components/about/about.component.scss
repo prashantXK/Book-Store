@@ -1,0 +1,129 @@
+.about .flex {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about .flex .image {
+    flex: 1 1 40rem;
+    ;
+}
+
+.about .flex .image img {
+    width: 100%;
+
+}
+
+
+.about .flex .content {
+    flex: 1 1 35rem;
+
+    padding: 1.3rem;
+    background-color: var(--light-bg);
+}
+
+.about .flex .content h3 {
+    font-size: 1.5rem;
+
+    color: rgb(32, 33, 33);
+    text-transform: uppercase;
+}
+
+.about .flex .content p {
+    padding: 0.5rem 0;
+    line-height: 1.7;
+    font-size: 1rem;
+    color: var(--black);
+}
+
+.about .flex .content a {
+    background-color: var(--purple);
+    color: var(--white)
+}
+
+.about .flex .content a:hover {
+    background-color: rgb(32, 33, 33);
+
+}
+
+
+//heading // 
+.heading {
+    min-height: 32vh;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+    background: url("../../../assets/images/heading-bg.webp");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.heading h3 {
+    font-size: 3.1rem;
+    font-weight: 600;
+    color: rgb(32, 33, 33);
+    text-transform: uppercase;
+}
+
+
+/*client reviews*/
+
+.client_section .client_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 45px;
+}
+
+.client_section .client_container .client_id {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.client_section .client_container .client_id h5 {
+    color: #1d1b28;
+  
+    margin-bottom: 5px;
+}
+
+
+
+.client_section .client_container .img-box {
+    width: 0%;
+    margin-right: 15px;
+}
+
+.client_section .client_container .img-box img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.client_section .client_container .detail-box {
+    
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 25px;
+    background: rgb(13, 69, 92);
+    color: var(--white);
+}
+
+.client_section .client_container .detail-box span {
+    color: #44b89d;
+    font-size: 25px;
+}
+

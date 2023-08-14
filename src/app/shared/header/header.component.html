@@ -1,0 +1,74 @@
+<ng-template #login>
+   <header class="header">
+     <div class="header-1">
+       <div class="flex">
+         <div class="share">
+           <a href="#" class="fab fa-facebook-f" title="fb"></a>
+           <a href="#" class="fab fa-twitter" title="twt"></a>
+           <a href="#" class="fab fa-instagram" title="insta"></a>
+           <a href="#" class="fab fa-linkedin" title="linked"></a>
+         </div>
+         <p>New <a href="#" routerLink="/login" routerLinkActive="active">Login</a> | <a href="#" routerLink="/signup" routerLinkActive="active">Register</a></p>
+       </div>
+     </div>
+ 
+     <div class="header-2 ">
+       <div class="flex ">
+         <a href="home.php" class="logo">BOOKWING</a>
+         <nav class="navbar">
+           <a href="#" routerLink="/home" routerLinkActive="active">Home</a>
+           <a href="#" routerLink="/components/about" routerLinkActive="active">About</a>
+           <a href="/home#categories">Books</a>
+           <a href="/footer#contacts">Contact</a>
+           <a href="#">Orders</a>
+         </nav>
+         <div class="icons">
+         
+           <a href="#" class="fas fa-search" title="search" routerLink="/search" routerLinkActive="active"></a>
+           <a href="#"><i class="fas fa-shopping-cart" title="cart" routerLink="/cart" routerLinkActive="active"></i> <span></span></a>
+         </div>
+       </div>
+     </div>
+   </header>
+ </ng-template>
+ 
+ <ng-container *ngIf="authService.currentUser | async as user; else login">
+   <header class="header">
+     <div class="header-1">
+       <div class="flex">
+         <div class="share">
+           <a href="#" class="fab fa-facebook-f" title="facebook"></a>
+           <a href="#" class="fab fa-twitter" title="twitter"></a>
+           <a href="#" class="fab fa-instagram" title="instagram"></a>
+           <a href="#" class="fab fa-linkedin" title="linkedin"></a>
+         </div>
+       </div>
+     </div>
+ 
+     <div class="header-2">
+       <div class="flex">
+         <a href="home.php" class="logo">BOOKWING</a>
+         <nav class="navbar">
+           <a href="#" routerLink="/home" routerLinkActive="active">Home</a>
+           <a href="#" routerLink="/components/about" routerLinkActive="active">About</a>
+           <a href="/home#categories">Books</a>
+           <a href="/footer#contacts">Contact</a>
+           <a href="#">Orders</a>
+         </nav>
+         <div class="dropdown" style="cursor: pointer;">
+           <a class="dropdown-toggle text-white" style="font-size: 21px;" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+             <i class="fas fa-user"></i>
+             {{ user.displayName }}
+           </a>
+           <ul class="dropdown-menu" aria-labelledby="userDropdown">
+             <li><a class="dropdown-item" href="#" routerLink="/profile" routerLinkActive="active">User Profile</a></li>
+             <li><a class="dropdown-item" href="#" routerLink="/cart" routerLinkActive="active">Cart</a></li>
+             <li><a class="dropdown-item" href="#" routerLink="/search" routerLinkActive="active">Search</a></li>
+             <li><a class="dropdown-item" href="#" (click)="logout()">Logout</a></li>
+           </ul>
+         </div>
+       </div>
+     </div>
+   </header>
+ </ng-container>
+ 

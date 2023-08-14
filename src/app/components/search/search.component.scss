@@ -1,0 +1,62 @@
+.container-fluid{
+    padding: 0 0;
+    width: 100%;
+}
+.heading {
+min-height: 35vh;
+
+display: flex;
+flex-flow: column;
+align-items: center;
+justify-content: center;
+
+background: url("../../../assets/images/heading-bg.webp");
+background-size: cover;
+background-position: center;
+
+}
+
+.heading h3 {
+font-size: 2.5rem;
+font-weight: 600;
+color: rgb(32, 33, 33);
+text-transform: uppercase;
+}
+
+
+body{
+
+background-color: #eee; 
+  }
+  
+  .card{
+  
+background-color: #fff;
+padding: 80px;
+border:none;
+  }
+  
+  .input-box{
+position: relative;
+width: 40rem;
+border: 2px solid white;
+  }
+  .input-box:hover{
+border-color: var(--purple);
+  }
+  
+  .input-box i {
+position: absolute;
+right: 13px;
+top:15px;
+color: var(--purple);
+  
+  }
+  
+  .form-control{
+  
+height: 50px;
+background-color:#eeeeee69;
+  }
+  
+

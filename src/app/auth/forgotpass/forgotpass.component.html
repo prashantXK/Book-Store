@@ -1,0 +1,33 @@
+<body>
+  <div class="container d-flex justify-content-center my-5">
+    <div class="card col-md-8">
+      <div class="card-body bg-light">
+        <form [formGroup]="forgotpass" (ngSubmit)="resetpassword()">
+          <h1 class="text-start">Reset Password</h1><br>
+          
+          <!-- Email input -->
+          <div class="form-group ">
+            <label for="email " class="mb-1">Email address</label>
+            <input type="email" id="email" class="form-control " formControlName="email" placeholder="Enter your email">
+            <small class="text-danger" *ngIf="email?.touched && email?.errors?.['required']">*Field cannot be blank</small>
+            <small class="text-danger" *ngIf="email?.touched && email?.errors?.['pattern']">*Invalid Format</small>
+          </div>
+          
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-success btn-block mt-4">Submit</button>
+          <!-- <div class="popup" [ngClass]="{ 'show': successMessage }">
+            
+            <h2>Signup Successful!</h2>
+            <span class="btn btn-success d-flex justify-content-center" (click)="closePopup()" routerLink="/home" routerLinkActive="active">Ok</span>
+  
+          </div>
+           -->
+          <!-- Remember Password -->
+          <div class="text-center">
+            <p>Remember Password? <a href="#" routerLink="/login" routerLinkActive="active">Login</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,190 @@
+<!-- admin-dashboard.component.html
+<div class="col-sm-6">
+
+    <h1 class="title mt-3" style="margin-left: 40px;">Dashboard</h1>
+    
+    <div class="col-sm-6 m-5 w-25 ">
+        
+        <div class="card mb-4 " style="height: 70px;" >
+            <h3 >{{ totalPendings  }}</h3>
+            <p>Total Pendings</p>
+        </div>
+        
+        <div class="card mb-4"  style="height: 70px;" >
+    <h3>{{ totalCompleted }}</h3>
+    <p>Completed Payments</p>
+</div>
+
+<div class="card mb-4"  style="height: 70px;" >
+    <h3>{{ numberOfOrders }}</h3>
+    <p>Order Placed</p>
+</div>
+
+<div class="card mb-4"  style="height: 70px;" >
+    <h3>{{ numberOfProducts }}</h3>
+    <p>Products Added</p>
+</div>
+
+<div class="card mb-4"  style="height: 70px;" >
+    <h3>{{ numberOfUsers }}</h3>
+    <p>Normal Users</p>
+</div>
+
+<div class="card mb-4"  style="height: 70px;" >
+    <h3>{{ numberOfAdmins }}</h3>
+    <p>Admin Users</p>
+</div>
+
+<div class="card mb-4"  style="height: 70px;" >
+    <h3>{{ numberOfAccounts }}</h3>
+    <p>Total Accounts</p>
+</div>
+
+<div class="card mb-4"  style="height: 70px;" >
+    <h3>{{ numberOfMessages }}</h3>
+    <p>New Messages</p>
+</div>
+
+</div>
+
+</div> -->
+<body>
+
+    <!-- <div class="col-sm-11 m-5">
+        <h1 class="title mt-3 mb-5 text-center ">Dashboard</h1>
+        
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 150px;">
+                    <h3></h3>
+                    <p>Total Pendings</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 150px;">
+                    <h3></h3>
+                    <p>Completed Payments</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 150px;">
+                    <h3></h3>
+                    <p>Order Placed</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4" style="height: 150px;">
+                    <h3></h3>
+          <p>Products Added</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-4" style="height: 150px;">
+            <h3></h3>
+            <p>Total Accounts</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-4" style="height: 150px;">
+            <h3></h3>
+            <p>New Messages</p>
+        </div>
+    </div>
+    
+</div>
+</div>
+  
+</body> -->
+
+<!-- dashboard.component.html -->
+<div class="d-flex justify-content-center mt-5 mb-5" id="back">
+
+    <!-- dashboard.component.html -->
+    
+    <div class="container-fluid">
+        <div class="row">
+          <!-- Sidebar -->
+          <div class="col-2 bg-white text-dark">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link text-black text"  routerLink="/admindash" routerLinkActive="active">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" routerLink="/addbooks" routerLinkActive="active" style="cursor: pointer;">Add Books</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" routerLink="/users" routerLinkActive="active" style="cursor: pointer">Users</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" routerLink="/orders" routerLinkActive="active" style="cursor: pointer">Orders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" routerLink="#" routerLinkActive="active" style="cursor: pointer">Messages</a>
+              </li>
+            </ul>
+          </div>
+      
+          <!-- Main Content -->
+          <div class="col-10">
+            <div class="card mt-4">
+              <div class="card-body ">
+                <h1 class="mb-5">Admin Dashboard</h1>
+      
+                <!-- Additional Content -->
+                    
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <div class="card mb-4" style="height: 150px;">
+                                <h3></h3>
+                                <p>Total Pendings</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <div class="card mb-4" style="height: 150px;">
+                                <h3></h3>
+                                <p>Completed Payments</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <div class="card mb-4" style="height: 150px;">
+                                <h3></h3>
+                                <p>Order Placed</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <div class="card mb-4" style="height: 150px;">
+                                <h3></h3>
+                      <p>Products Added</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4" style="height: 150px;">
+                        <h3></h3>
+                        <p>Total Accounts</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4" style="height: 150px;">
+                        <h3></h3>
+                        <p>New Messages</p>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+              
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      
+      
+   
