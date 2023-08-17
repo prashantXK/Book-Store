@@ -1,3 +1,7 @@
+An Online Book store project built using HTML,CSS,JS,Bootstrap,TS on ANgular framework.
+Database:Firebase
+### The project is not completed yet
+
 # Forms
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.4.
