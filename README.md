@@ -1,4 +1,4 @@
-An Online Book store project built using HTML,CSS,JS,Bootstrap,TS on ANgular framework.
+An Online Book store project built using HTML,CSS,JS,Bootstrap,TS on Angular framework.
 Database:Firebase
 ### The project is not completed yet
 
